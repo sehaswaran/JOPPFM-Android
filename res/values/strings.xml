@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">JOPPFM</string>
+
+	<string name="menu_help">Help?</string>
+	<string name="menu_share">Share</string>
+	<string name="menu_rate">Rate</string>
+	<string name="menu_ads">Ads?</string>
+	<string name="menu_feedback">Feedback</string>
+</resources>

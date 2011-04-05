@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:title="@string/menu_feedback" android:icon="@android:drawable/ic_menu_edit"
+		android:id="@+id/menu_feedback" />
+
+	<item android:title="@string/menu_help" android:icon="@android:drawable/ic_menu_help"
+		android:id="@+id/menu_help" />
+
+	<item android:title="@string/menu_rate" android:icon="@drawable/chart"
+		android:id="@+id/menu_rate" />
+
+	<item android:title="@string/menu_share" android:icon="@android:drawable/ic_menu_share"
+		android:id="@+id/menu_share" />
+
+	<item android:title="@string/menu_ads" android:icon="@drawable/love"
+		android:id="@+id/menu_ads" />
+</menu>
