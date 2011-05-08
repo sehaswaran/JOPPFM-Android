@@ -85,6 +85,8 @@ public class GtalkObtainer implements Obtainer {
                 final MessageMap temp = list.get(0);
                 if (messageCursor.getString(messageCursor.getColumnIndex(messageProjection[0])).startsWith(temp.get("message")) && temp.get("sender").equals(contact.getFullname())) {
                     list.remove(temp);
+                } else if (messageCursor.getString(messageCursor.getColumnIndex(messageProjection[0])).endsWith(temp.get("message")) && temp.get("sender").equals(contact.getFullname())) {
+                    list.remove(temp);
                 }
 
                 list.add(map);

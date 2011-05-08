@@ -64,7 +64,6 @@ public class MessageAdapter extends BaseAdapter {
                 ad.setBackgroundColor(Color.WHITE);
 
                 final AdRequest request = new AdRequest();
-                request.setTesting(true);
 
                 ad.loadAd(request);
             }

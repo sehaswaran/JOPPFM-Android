@@ -30,11 +30,4 @@
 		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>API-Announcify_src</name>
-			<type>2</type>
-			<locationURI>_android_API_Announcify_5ca3e3d3/src</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>

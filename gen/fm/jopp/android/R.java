@@ -77,20 +77,21 @@ containing a value of this type.
         public static final int actionbar_btn_normal=0x7f020002;
         public static final int actionbar_btn_pressed=0x7f020003;
         public static final int chart=0x7f020004;
-        public static final int gd_action_bar_add_normal=0x7f020005;
-        public static final int gd_action_bar_compose_normal=0x7f020006;
-        public static final int gd_action_bar_edit_normal=0x7f020007;
-        public static final int gd_action_bar_export_normal=0x7f020008;
-        public static final int gd_action_bar_refresh_normal=0x7f020009;
-        public static final int gd_action_bar_share_normal=0x7f02000a;
-        public static final int gd_action_bar_sort_by_size_normal=0x7f02000b;
-        public static final int gd_action_bar_star_normal=0x7f02000c;
-        public static final int gd_action_bar_talk_normal=0x7f02000d;
-        public static final int gd_segment_divider=0x7f02000e;
-        public static final int icon=0x7f02000f;
-        public static final int launcher_icon=0x7f020010;
-        public static final int launcher_icon_old=0x7f020011;
-        public static final int love=0x7f020012;
+        public static final int flash=0x7f020005;
+        public static final int gd_action_bar_add_normal=0x7f020006;
+        public static final int gd_action_bar_compose_normal=0x7f020007;
+        public static final int gd_action_bar_edit_normal=0x7f020008;
+        public static final int gd_action_bar_export_normal=0x7f020009;
+        public static final int gd_action_bar_refresh_normal=0x7f02000a;
+        public static final int gd_action_bar_share_normal=0x7f02000b;
+        public static final int gd_action_bar_sort_by_size_normal=0x7f02000c;
+        public static final int gd_action_bar_star_normal=0x7f02000d;
+        public static final int gd_action_bar_talk_normal=0x7f02000e;
+        public static final int gd_segment_divider=0x7f02000f;
+        public static final int icon=0x7f020010;
+        public static final int launcher_icon=0x7f020011;
+        public static final int launcher_icon_old=0x7f020012;
+        public static final int love=0x7f020013;
     }
     public static final class id {
         public static final int BANNER=0x7f0a0000;
@@ -107,11 +108,12 @@ containing a value of this type.
         public static final int actionbar_title=0x7f0a000a;
         public static final int ad=0x7f0a000e;
         public static final int container=0x7f0a000d;
-        public static final int menu_ads=0x7f0a0013;
+        public static final int menu_ads=0x7f0a0014;
+        public static final int menu_ads_temp=0x7f0a0011;
         public static final int menu_feedback=0x7f0a000f;
         public static final int menu_help=0x7f0a0010;
-        public static final int menu_rate=0x7f0a0011;
-        public static final int menu_share=0x7f0a0012;
+        public static final int menu_rate=0x7f0a0012;
+        public static final int menu_share=0x7f0a0013;
         public static final int screen=0x7f0a0004;
     }
     public static final class layout {
@@ -129,7 +131,8 @@ containing a value of this type.
     public static final class string {
         public static final int app_name=0x7f070023;
         public static final int menu_ads=0x7f070027;
-        public static final int menu_feedback=0x7f070028;
+        public static final int menu_ads_temp=0x7f070028;
+        public static final int menu_feedback=0x7f070029;
         public static final int menu_help=0x7f070024;
         public static final int menu_rate=0x7f070026;
         public static final int menu_share=0x7f070025;

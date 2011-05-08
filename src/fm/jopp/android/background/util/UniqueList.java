@@ -29,14 +29,9 @@ public class UniqueList<E> extends ArrayList<MessageMap> {
             if (super.add(object)) {
                 adapter.notifyChange();
 
-                if (size() >= 50 && Money.isDonate(context)) {
-                    final MessageMap map = new MessageMap();
+                if (size() >= 50 && !Money.isDonate(context)) {
+                    final MessageMap map = MessageMap.adMap;
                     map.put("timestamp", String.valueOf(System.currentTimeMillis() + 3000));
-                    map.put("message", "Ads");
-                    map.put("color", "#FFFFFF");
-                    map.put("uri", "ad:ad");
-                    map.put("sender", "Tom Tasche");
-
                     super.add(map);
                 }
 

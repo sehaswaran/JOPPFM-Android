@@ -7,6 +7,9 @@
 	<item android:title="@string/menu_help" android:icon="@android:drawable/ic_menu_help"
 		android:id="@+id/menu_help" />
 
+	<item android:title="@string/menu_ads_temp" android:icon="@drawable/flash"
+		android:id="@+id/menu_ads_temp" />
+
 	<item android:title="@string/menu_rate" android:icon="@drawable/chart"
 		android:id="@+id/menu_rate" />
 

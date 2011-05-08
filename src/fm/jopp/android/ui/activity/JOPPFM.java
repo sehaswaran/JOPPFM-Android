@@ -5,6 +5,7 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,15 +38,18 @@ public class JOPPFM extends ListActivity {
 
         obtainer = new MessageObtainer(this, adapter);
         obtainer.fetchMessages();
+        // obtainer.fetchMessagesForScreenshot();
 
-        if (Money.isDonate(this)) {
-            final MessageMap map = new MessageMap();
-            map.put("timestamp", String.valueOf(System.currentTimeMillis()));
-            map.put("message", "Ads");
-            map.put("color", "#FFFFFF");
-            map.put("uri", "ad:ad");
-            map.put("sender", "Tom Tasche");
-            adapter.getList().add(map);
+        if (!Money.isDonate(this)) {
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    final MessageMap map = MessageMap.adMap;
+                    map.put("timestamp", String.valueOf(System.currentTimeMillis()));
+                    adapter.getList().add(map);
+                }
+            }, 10000);
         }
 
         getListView().setFastScrollEnabled(true);
@@ -81,9 +85,9 @@ public class JOPPFM extends ListActivity {
         switch (item.getItemId()) {
             case R.id.menu_help:
                 final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("That's just JOPPFM: Just One Pretty Place For Messaging");
+                builder.setTitle("JOPPFM: Just One Pretty Place For Messaging");
                 builder.setIcon(getResources().getDrawable(R.drawable.icon));
-                builder.setMessage("JOPPFM helps you to keep up with your friends, because there's only one place you need to check in order to see all your messages.");
+                builder.setMessage("JOPPFM helps you to keep up with your friends.\nThere's only one place you need to check in order to see all your messages and conversations.\n\nhttp://joppfm.tomtasche.at/");
                 builder.setCancelable(true);
                 builder.create().show();
 
@@ -96,6 +100,12 @@ public class JOPPFM extends ListActivity {
 
             case R.id.menu_ads:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://goo.gl/p4jH2")));
+
+                break;
+
+            case R.id.menu_ads_temp:
+                adapter.getList().remove(MessageMap.adMap);
+                adapter.notifyChange();
 
                 break;
 

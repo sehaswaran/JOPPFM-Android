@@ -6,5 +6,6 @@
 	<string name="menu_share">Share</string>
 	<string name="menu_rate">Rate</string>
 	<string name="menu_ads">Ads?</string>
+	<string name="menu_ads_temp">Ads! :@</string>
 	<string name="menu_feedback">Feedback</string>
 </resources>

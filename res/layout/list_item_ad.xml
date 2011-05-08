@@ -3,6 +3,6 @@
 	xmlns:ads="http://schemas.android.com/apk/res/fm.jopp.android">
 	
 	<com.google.ads.AdView android:id="@+id/ad" android:layout_width="fill_parent"
-		android:layout_height="?android:attr/listPreferredItemHeight" ads:adUnitId="a14d9a153df22f0"
+		android:layout_height="wrap_content" ads:adUnitId="a14d9a153df22f0"
 		ads:adSize="BANNER" />
 </RelativeLayout>
